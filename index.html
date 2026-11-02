@@ -15,7 +15,7 @@
 <style>
 :root{
   --bg:#1a1c2c; --panel:#262b44; --line:#333c57; --slate:#566c86;
-  --text:#f4f4f4; --muted:#94b0c2; --accent:#ffcd75; --green:#a7f070;
+  --text:#f4f4f4; --muted:#bccfdb; --accent:#ffcd75; --green:#a7f070;
   --pixel:'Press Start 2P', monospace;
 }
 *{box-sizing:border-box}
@@ -29,7 +29,7 @@ a{color:inherit}
 /* фон: звёзды и ЭЛТ-полоски */
 .stars{position:absolute;inset:0;pointer-events:none;z-index:0}
 .stars i{position:absolute;display:block;animation:px-twinkle 2s steps(1) infinite}
-.scan{position:fixed;inset:0;pointer-events:none;z-index:50;background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0,rgba(0,0,0,.18) 2px,transparent 2px,transparent 4px)}
+.scan{position:fixed;inset:0;pointer-events:none;z-index:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0,rgba(0,0,0,.18) 2px,transparent 2px,transparent 4px)}
 
 /* шапка */
 header{position:relative;z-index:1;border-bottom:4px solid var(--line);background:var(--panel);overflow:hidden}
