@@ -1,11 +1,11 @@
 :root{
   --bg:#1a1c2c; --panel:#262b44; --line:#333c57; --slate:#566c86;
-  --text:#f4f4f4; --muted:#bccfdb; --accent:#ffcd75; --green:#a7f070;
+  --text:#ffffff; --muted:#dde7ee; --accent:#ffcd75; --green:#a7f070;
   --pixel:'Press Start 2P', monospace;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font-family:'Pixelify Sans',monospace;font-size:18px;line-height:1.5;-webkit-font-smoothing:none}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Pixelify Sans',monospace;font-weight:500;font-size:18px;line-height:1.55;-webkit-font-smoothing:none}
 a{color:inherit}
 .page{position:relative;overflow:hidden;min-height:100vh}
 .px{font-family:var(--pixel)}
@@ -14,7 +14,7 @@ a{color:inherit}
 /* фон: звёзды и ЭЛТ-полоски */
 .stars{position:absolute;inset:0;pointer-events:none;z-index:0}
 .stars i{position:absolute;display:block;animation:px-twinkle 2s steps(1) infinite}
-.scan{position:fixed;inset:0;pointer-events:none;z-index:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0,rgba(0,0,0,.18) 2px,transparent 2px,transparent 4px)}
+.scan{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.6;background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0,rgba(0,0,0,.18) 2px,transparent 2px,transparent 4px)}
 
 /* шапка */
 header{position:relative;z-index:1;border-bottom:4px solid var(--line);background:var(--panel);overflow:hidden}
@@ -116,8 +116,8 @@ footer{position:relative;z-index:1;border-top:4px solid var(--line);padding:24px
 @keyframes px-walk{0%{transform:translateX(-80px)}100%{transform:translateX(calc(100vw + 80px))}}
 
 @media (max-width:600px){
-  :root{--muted:#e3ebf1}
-  .scan{opacity:.35}
+  :root{--muted:#f0f4f7}
+  .scan{opacity:.25}
   .stats,.lvl,footer{font-size:11px}
   .skill .ds,.step .ds{font-size:17px}
   nav{gap:4px;padding-top:12px;padding-bottom:4px}
