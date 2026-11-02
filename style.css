@@ -2,10 +2,11 @@
   --bg:#1a1c2c; --panel:#262b44; --line:#333c57; --slate:#566c86;
   --text:#f4f4f4; --muted:#bccfdb; --accent:#ffcd75; --green:#a7f070;
   --pixel:'Press Start 2P', monospace;
+  --body:'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font-family:'Pixelify Sans',monospace;font-size:18px;line-height:1.5;-webkit-font-smoothing:none}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:18px;line-height:1.65}
 a{color:inherit}
 .page{position:relative;overflow:hidden;min-height:100vh}
 .px{font-family:var(--pixel)}
@@ -20,10 +21,10 @@ a{color:inherit}
 header{position:relative;z-index:1;border-bottom:4px solid var(--line);background:var(--panel);overflow:hidden}
 nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding-top:16px;padding-bottom:16px}
 .logo{font-family:var(--pixel);font-size:14px;color:var(--accent);text-decoration:none}
-.menu{display:flex;flex-wrap:wrap;gap:4px 20px;font-family:var(--pixel);font-size:10px}
+.menu{display:flex;flex-wrap:wrap;gap:4px 24px;font-family:var(--body);font-weight:600;font-size:14px;letter-spacing:.04em}
 .menu a{text-decoration:none;padding:12px 0}
 .menu a:hover{color:var(--accent)}
-.langs{display:flex;gap:4px;font-family:var(--pixel);font-size:10px}
+.langs{display:flex;gap:4px;font-family:var(--body);font-weight:600;font-size:14px}
 .langs a{text-decoration:none;padding:10px 8px;border:2px solid transparent;color:var(--muted)}
 .langs a:hover{color:var(--accent)}
 .langs a[aria-current="true"]{color:var(--bg);background:var(--accent);border-color:var(--text)}
@@ -37,7 +38,7 @@ h2{margin:0 0 28px;font-family:var(--pixel);font-size:20px;line-height:1.5;color
 /* герой */
 .hero{display:flex;flex-wrap:wrap;align-items:center;gap:48px;padding:72px 0 64px}
 .hero-text{flex:1 1 340px;min-width:0;display:flex;flex-direction:column;gap:24px}
-.hello{margin:0;font-family:var(--pixel);font-size:11px;color:var(--green)}
+.hello{margin:0;font-weight:600;font-size:15px;letter-spacing:.04em;color:var(--green)}
 h1{margin:0;font-family:var(--pixel);font-size:30px;line-height:1.4}
 h1 span{color:var(--accent)}
 .intro{margin:0;font-size:22px;color:var(--muted);max-width:560px}
@@ -52,7 +53,7 @@ h1 span{color:var(--accent)}
 .char{flex:0 1 340px;min-width:260px;background:var(--panel);border:4px solid var(--text);box-shadow:8px 8px 0 #000;padding:24px;display:flex;flex-direction:column;align-items:center;gap:20px}
 .avatar-frame{background:var(--slate);padding:16px 8px 0;overflow:hidden}
 .avatar{width:192px;height:192px;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(12,1fr);animation:px-bob 1.2s steps(1) infinite}
-.stats{width:100%;display:flex;flex-direction:column;gap:10px;font-family:var(--pixel);font-size:10px}
+.stats{width:100%;display:flex;flex-direction:column;gap:8px;font-weight:600;font-size:15px;letter-spacing:.03em}
 .stat{display:flex;justify-content:space-between;gap:8px}
 .stat .k{color:var(--muted);flex:none}
 .stat > :last-child{text-align:right}
@@ -64,8 +65,8 @@ h1 span{color:var(--accent)}
 .row{display:flex;flex-wrap:wrap;gap:16px}
 .skill{flex:1 1 160px;background:var(--panel);border:4px solid var(--slate);padding:16px;display:flex;flex-direction:column;gap:8px}
 .skill .ic{font-family:var(--pixel);font-size:18px;line-height:1.6}
-.skill .ic.small{font-size:9px}
-.skill .nm{font-family:var(--pixel);font-size:11px;line-height:1.6}
+.skill .ic.small{font-family:var(--body);font-weight:600;font-size:13px;line-height:1.4;letter-spacing:.03em}
+.skill .nm{font-weight:600;font-size:15px;line-height:1.4;letter-spacing:.03em}
 .skill .ds{font-size:16px;color:var(--muted)}
 
 .projects{display:flex;flex-wrap:wrap;gap:24px}
@@ -73,12 +74,12 @@ h1 span{color:var(--accent)}
 .card:hover{transform:translate(-4px,-4px);box-shadow:12px 12px 0 #000}
 .card img{display:block;width:100%;height:200px;border-bottom:4px solid var(--text)}
 .card .body{padding:20px;display:flex;flex-direction:column;gap:12px}
-.lvl{font-family:var(--pixel);font-size:10px;color:var(--green)}
+.lvl{font-weight:600;font-size:14px;letter-spacing:.04em;color:var(--green)}
 h3{margin:0;font-family:var(--pixel);font-size:14px;line-height:1.6}
 .card p{margin:0;color:var(--muted)}
 .tags{display:flex;flex-wrap:wrap;gap:8px;font-size:15px}
 .tags span{border:2px solid var(--slate);padding:2px 8px}
-.go{font-family:var(--pixel);font-size:11px;color:var(--accent);padding:12px 0}
+.go{font-weight:600;font-size:16px;letter-spacing:.03em;color:var(--accent);padding:12px 0}
 .locked{flex:1 1 300px;min-width:0;border:4px dashed var(--slate);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:32px 20px;text-align:center;min-height:280px}
 .locked .q{font-family:var(--pixel);font-size:40px;color:var(--slate)}
 .locked .t{font-family:var(--pixel);font-size:12px;color:var(--muted);line-height:1.6}
@@ -87,7 +88,7 @@ h3{margin:0;font-family:var(--pixel);font-size:14px;line-height:1.6}
 .steps{margin:0;padding:0;list-style:none}
 .step{flex:1 1 220px;background:var(--panel);border:4px solid var(--slate);padding:16px;display:flex;flex-direction:column;gap:8px}
 .step .n{font-family:var(--pixel);font-size:22px;color:var(--accent)}
-.step .nm{font-family:var(--pixel);font-size:11px;line-height:1.6}
+.step .nm{font-weight:600;font-size:15px;line-height:1.4;letter-spacing:.03em}
 .step .ds{font-size:16px;color:var(--muted)}
 
 /* контакты */
@@ -98,7 +99,7 @@ h3{margin:0;font-family:var(--pixel);font-size:14px;line-height:1.6}
 .handles{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 24px;font-size:18px}
 .handles a{color:var(--muted);padding:8px 0;word-break:break-all}
 
-footer{position:relative;z-index:1;border-top:4px solid var(--line);padding:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;text-align:center;font-family:var(--pixel);font-size:10px;color:var(--muted);line-height:1.8}
+footer{position:relative;z-index:1;border-top:4px solid var(--line);padding:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;text-align:center;font-size:14px;color:var(--muted);line-height:1.6}
 .coin{display:inline-block;width:16px;height:16px;background:var(--accent);border:4px solid #ef7d57;animation:px-coin .8s steps(1) infinite}
 
 /* секрет: код Konami */
@@ -118,14 +119,14 @@ footer{position:relative;z-index:1;border-top:4px solid var(--line);padding:24px
 @media (max-width:600px){
   :root{--muted:#e3ebf1}
   .scan{opacity:.35}
-  .stats,.lvl,footer{font-size:11px}
+  .stats{font-size:15px}
   .skill .ds,.step .ds{font-size:17px}
   nav{gap:4px;padding-top:12px;padding-bottom:4px}
   .logo{flex:1}
-  .langs{order:2;font-size:9px}
+  .langs{order:2;font-size:13px}
   .langs a{padding:6px}
   .menu{order:3}
-  .menu{width:100%;flex-wrap:nowrap;justify-content:space-between;gap:8px;font-size:9px}
+  .menu{width:100%;flex-wrap:nowrap;justify-content:space-between;gap:8px;font-size:13px;letter-spacing:.02em}
   .menu a{padding:14px 0;white-space:nowrap}
   h1{font-size:22px}
   h2{font-size:16px}
@@ -134,7 +135,7 @@ footer{position:relative;z-index:1;border-top:4px solid var(--line);padding:24px
   .char{min-width:0;width:100%}
 }
 @media (max-width:360px){
-  .menu{font-size:8px;gap:4px}
+  .menu{font-size:12px;gap:4px;letter-spacing:0}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation:none !important}
