@@ -119,11 +119,17 @@ footer{position:relative;z-index:1;border-top:4px solid var(--line);padding:24px
 @keyframes px-walk{0%{transform:translateX(-80px)}100%{transform:translateX(calc(100vw + 80px))}}
 
 @media (max-width:600px){
+  nav{gap:4px;padding-top:12px;padding-bottom:4px}
+  .menu{width:100%;flex-wrap:nowrap;justify-content:space-between;gap:8px;font-size:9px}
+  .menu a{padding:14px 0;white-space:nowrap}
   h1{font-size:22px}
   h2{font-size:16px}
   .contact-box h2{font-size:20px}
   .hero{padding:48px 0 40px;gap:36px}
   .char{min-width:0;width:100%}
+}
+@media (max-width:360px){
+  .menu{font-size:8px;gap:4px}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation:none !important}
