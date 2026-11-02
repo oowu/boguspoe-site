@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{url}}">
+{{hreflang}}
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{url}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{og_desc}}">
+<meta property="og:locale" content="{{og_locale}}">
+<meta property="og:image" content="https://boguspoe.dev/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="boguspoe.dev">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1a1c2c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' shape-rendering='crispEdges'%3E%3Crect width='8' height='8' fill='%231a1c2c'/%3E%3Crect x='2' y='1' width='4' height='2' fill='%233b2416'/%3E%3Crect x='2' y='3' width='4' height='2' fill='%23f2c39b'/%3E%3Crect x='3' y='3' width='1' height='1' fill='%231a1c2c'/%3E%3Crect x='5' y='3' width='1' height='1' fill='%231a1c2c'/%3E%3Crect x='1' y='5' width='6' height='3' fill='%231f2a5c'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css?v={{ver}}">
+</head>
+<body data-secret="{{secret}}">
+<div class="page">
+  <div class="scan" aria-hidden="true"></div>
+  <div class="stars" id="stars" aria-hidden="true"></div>
+
+  <header>
+    <nav class="wrap" aria-label="{{nav_label}}">
+      <a href="#top" class="logo">boguspoe.dev</a>
+      <div class="menu">
+        <a href="#about">{{nav_about}}</a>
+        <a href="#skills">{{nav_skills}}</a>
+        <a href="#projects">{{nav_projects}}</a>
+        <a href="#contact">{{nav_contact}}</a>
+      </div>
+      <div class="langs" aria-label="{{lang_label}}">{{langs}}</div>
+    </nav>
+    <div class="slime" id="slime" aria-hidden="true"></div>
+  </header>
+
+  <main id="top" class="wrap">
+
+    <section id="about" class="hero">
+      <div class="hero-text">
+        <p class="hello">&gt; {{hello}}<span class="blink">_</span></p>
+        <h1>{{hi}} <span>bogdan</span></h1>
+        <p class="intro">{{intro}}</p>
+        <div class="btns">
+          <a href="#contact" class="btn primary"><span class="blink" style="animation-duration:.8s">▶</span> {{btn_start}}</a>
+          <a href="#projects" class="btn">{{btn_levels}}</a>
+        </div>
+      </div>
+
+      <div class="char">
+        <div class="avatar-frame">
+          <div class="avatar" id="avatar" role="img" aria-label="{{avatar_label}}"></div>
+        </div>
+        <div class="stats">
+          <div class="stat"><span class="k">{{st_nick}}</span><a href="https://t.me/boguspoe">@boguspoe</a></div>
+          <div class="stat"><span class="k">{{st_class}}</span><span>{{v_class}}</span></div>
+          <div class="stat"><span class="k">{{st_loc}}</span><span>{{v_loc}}</span></div>
+          <div class="stat"><span class="k">{{st_status}}</span><span style="color:var(--green)">{{v_status}}</span></div>
+          <div style="display:flex;flex-direction:column;gap:6px;padding-top:6px">
+            <span style="color:var(--muted)">{{st_charge}}</span>
+            <div class="bar"><div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>★ {{h_inventory}}</h2>
+      <p class="lead">{{inv_lead}}</p>
+      <div class="row">
+        <div class="skill"><span class="ic" style="color:#ef7d57" aria-hidden="true">&lt;&gt;</span><span class="nm">HTML / CSS</span><span class="ds">{{sk_html}}</span></div>
+        <div class="skill"><span class="ic" style="color:#ffcd75" aria-hidden="true">PY</span><span class="nm">PYTHON</span><span class="ds">{{sk_py}}</span></div>
+        <div class="skill"><span class="ic" style="color:#41a6f6" aria-hidden="true">TG</span><span class="nm">TELEGRAM API</span><span class="ds">{{sk_tg}}</span></div>
+        <div class="skill"><span class="ic" style="color:#f4f4f4" aria-hidden="true">GH</span><span class="nm">GITHUB</span><span class="ds">{{sk_gh}}</span></div>
+        <div class="skill"><span class="ic" style="color:#73eff7" aria-hidden="true">↑↑</span><span class="nm">{{sk_host_n}}</span><span class="ds">{{sk_host}}</span></div>
+        <div class="skill"><span class="ic" style="color:#a7f070" aria-hidden="true">AI</span><span class="nm">{{sk_ai_n}}</span><span class="ds">Claude, Gemini, ChatGPT</span></div>
+        <div class="skill"><span class="ic small" style="color:#ef7d57" aria-hidden="true">NODE-BASED WORKFLOW AUTOMATION PLATFORM</span><span class="nm">{{sk_n8n_n}}</span><span class="ds">{{sk_n8n}}</span></div>
+        <div class="skill"><span class="ic" style="color:#ffcd75" aria-hidden="true">AG</span><span class="nm">{{sk_ag_n}}</span><span class="ds">{{sk_ag}}</span></div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>★ {{h_levels}}</h2>
+      <div class="projects">
+        <article class="card">
+          <img src="/ocean-beauty.png" alt="{{p1_alt}}" style="object-fit:cover;object-position:left top;background:#f4f4f4" loading="lazy">
+          <div class="body">
+            <span class="lvl">{{p1_lvl}}</span>
+            <h3>OCEAN BEAUTY</h3>
+            <p>{{p1_desc}}</p>
+            <div class="tags"><span>HTML/CSS</span><span>GitHub</span><span>Netlify</span></div>
+            <a href="https://oceanbeauty.pl" class="go" target="_blank" rel="noopener">▶ {{p1_go}}</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="/bot.png" alt="{{p2_alt}}" style="object-fit:contain;background:#181818" loading="lazy">
+          <div class="body">
+            <span class="lvl">{{p2_lvl}}</span>
+            <h3>{{p2_title}}</h3>
+            <p>{{p2_desc}}</p>
+            <div class="tags"><span>Python</span><span>Telegram API</span><span>{{tag_server}}</span></div>
+            <a href="https://t.me/OceanBeautyCourseBot" class="go" target="_blank" rel="noopener">▶ {{p2_go}}</a>
+          </div>
+        </article>
+        <article class="locked">
+          <span class="q" aria-hidden="true">?</span>
+          <span class="t">{{p3_lvl}}<br>{{p3_locked}}</span>
+          <p>{{p3_desc}}</p>
+          <a href="#contact" class="go">▶ {{p3_go}}</a>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>★ {{h_quest}}</h2>
+      <ol class="steps row">
+        <li class="step"><span class="n">01</span><span class="nm">{{s1}}</span><span class="ds">{{s1d}}</span></li>
+        <li class="step"><span class="n">02</span><span class="nm">{{s2}}</span><span class="ds">{{s2d}}</span></li>
+        <li class="step"><span class="n">03</span><span class="nm">{{s3}}</span><span class="ds">{{s3d}}</span></li>
+        <li class="step"><span class="n">04</span><span class="nm">{{s4}}</span><span class="ds">{{s4d}}</span></li>
+      </ol>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-box">
+        <h2>CONTINUE?</h2>
+        <p>{{contact}}</p>
+        <div class="btns" style="justify-content:center">
+          <a href="https://t.me/boguspoe" class="btn primary" target="_blank" rel="noopener">TELEGRAM</a>
+          <a href="mailto:pbohdanpl@gmail.com" class="btn">EMAIL</a>
+        </div>
+        <div class="handles">
+          <a href="https://t.me/boguspoe" target="_blank" rel="noopener">@boguspoe</a>
+          <a href="mailto:pbohdanpl@gmail.com">pbohdanpl@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>© 2026 bogdan · INSERT COIN TO CONTINUE</span>
+    <span class="coin" aria-hidden="true"></span>
+  </footer>
+</div>
+<script src="/site.js?v={{ver}}"></script>
+</body>
+</html>
